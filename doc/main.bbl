@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+
+\bibitem{Volley}
+Httpurlconnection.
+\newblock
+  http://developer.android.com/reference/java/net/HttpURLConnection.html.
+
+\bibitem{parcel}
+Parcelable.
+\newblock http://developer.android.com/reference/android/os/Parcelable.html.
+
+\end{thebibliography}

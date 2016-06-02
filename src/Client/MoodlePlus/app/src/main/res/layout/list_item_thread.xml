@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Sno"
+        android:text="saas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Sno"
+        android:paddingBottom="10dp"
+        android:textColor="#CC0033"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/Updated_on"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:textColor="#3399FF"
+        android:textSize="14dp" />
+
+</RelativeLayout>

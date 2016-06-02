@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saideep.moodleplus.ThreadInfo">
+
+    <LinearLayout android:id="@+id/linearlayout1"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/posted_by"
+        android:textColor="#1E90FF"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView android:id="@+id/posted_title"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/posted_by"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+         />
+
+</LinearLayout>
+
+    <LinearLayout android:id="@+id/linearlayout2"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/Created_At"
+            android:textColor="#808080"
+            android:layout_below="@id/posted_by"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignParentRight="true" />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout android:id="@+id/linearlayout3"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/linearlayout2"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/Updated_At"
+                android:textColor="#808080"
+                android:layout_above="@+id/description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView android:id="@+id/description"
+                android:layout_above="@+id/new_comment"
+                android:background="#D3D3D3"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_alignParentRight="true" />
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/new_comment"
+                android:layout_width="match_parent"
+                android:layout_below="@id/Created_At"
+                android:layout_height="123dp"
+                android:hint="Post Comment" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/post_button"
+            style="?android:textAppearanceSmall"
+            android:layout_below="@id/new_comment"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:layout_above="@+id/list"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@id/linearlayout3"
+        android:layout_height="228dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+
+</RelativeLayout>
